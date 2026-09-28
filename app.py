@@ -7,3 +7,18 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.dummy import DummyClassifier
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix,classification_report
+
+#Sera utilizada a package iris do sklearn
+
+iris = load_iris()
+X = iris.data
+y= iris.target
+# os parametros sao atribuidos (X-atributos; y-especie codificada)
+
+
+#Teste
+print("Forma de X:", X.shape)
+print("Forma de y:", y.shape)
+
+print("Atributos:", iris.feature_names)
+print("Classes:", iris.target_names)
